@@ -49,5 +49,4 @@ export class DataService {
     console.log(data);
     return data;    
   }
-
 }

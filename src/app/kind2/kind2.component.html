@@ -1,14 +1,15 @@
+
 <div class="container">
     <div class="card">
+        <div class="image">
+            <img src="https://assets.compramass.com/products/{{producto.ean}}@3x.jpg" alt="https://assets.compramass.com/products/{{producto.ean}}@3x.jpg"/>
+        </div>
         <div class="content">
-            <div class="c1 image">
-                <img alt="No disponible"/>
+            <div class="c1">
+                <h5>{{producto.name}}</h5>
+                <h5>{{producto.price | currency:'$':'symbol':'1.0'}}</h5>
             </div>
             <div class="c2">
-                <h5>Titulo</h5>
-                <h5>Precio</h5>
-            </div>
-            <div class="c3">
                 <button>Comprar</button>
             </div>
         </div>
