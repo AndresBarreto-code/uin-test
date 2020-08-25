@@ -16,11 +16,12 @@ export class DataService {
   constructor(private httpService: HttpService) { }
 
   //Funcion que usará el servicio de http para solicitar los productos, dentro de la misma se invocarán las funciones para hacer el tratamiento de datos
-  getProducts() {
+  getProducts(callback) {
     this.httpService.getProducts()
       .subscribe((data: Data) => {
         console.log(data);
         this.categories = this.sortProducts(this.categorizeProducts(data)); 
+        callback(this.categories);
       });
   }
   
