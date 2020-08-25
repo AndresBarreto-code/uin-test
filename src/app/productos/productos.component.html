@@ -1,1 +1,11 @@
-<p>productos works!</p>
+<div *ngFor='let elemento of categoriesHtml'  class="">
+    <div *ngIf="elemento.componente == 'titulo'">
+        <app-titulo></app-titulo>
+    </div>
+    <div *ngIf="elemento.componente == 'kind1'">
+        <app-kind1></app-kind1>
+    </div>
+    <div *ngIf="elemento.componente == 'kind2'">
+        <app-kind2></app-kind2>
+    </div>
+</div>

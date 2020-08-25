@@ -9,12 +9,18 @@ import { ProductosComponent } from './productos/productos.component';
 
 import { HttpService } from './services/http.service';
 import { DataService } from './services/data.service';
+import { TituloComponent } from './titulo/titulo.component';
+import { Kind1Component } from './kind1/kind1.component';
+import { Kind2Component } from './kind2/kind2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    ProductosComponent
+    ProductosComponent,
+    TituloComponent,
+    Kind1Component,
+    Kind2Component
   ],
   imports: [
     BrowserModule,

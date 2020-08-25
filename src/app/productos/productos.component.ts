@@ -1,7 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../services/data.service';
 
+import { TituloComponent } from '../titulo/titulo.component';
+import { Kind1Component } from '../kind1/kind1.component';
+import { Kind2Component } from '../kind2/kind2.component';
+
 import { ProductData } from '../interfaces/product-data';
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-productos',
