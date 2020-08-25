@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "uin-prueba"
+    }
+  },
+  "defaultProject": "uin-prueba",
+  "cli": {
+    "analytics": false
+  }
 }
