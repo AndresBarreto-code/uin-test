@@ -1,0 +1,52 @@
+$color_border: #E6E6E6;
+$color_border2: #E8E8E8;
+$radius: 8px;
+$backcolor: white;
+$primary_color: #006EFF;
+$price_color: #585858;
+.card{
+    border: solid $color_border 1px;
+    border-radius: $radius;
+    background: $backcolor;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    box-shadow: 2px 2px 12px $color_border, -2px -2px 12px $color_border;
+    .image{
+        img{
+            width: 100%;
+            border-top-right-radius: $radius;
+            border-top-left-radius: $radius;
+            border: solid $color_border2 1px !important;
+        }
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .c1{
+            margin-left: 16px;
+            margin-right: 4px;
+            .name{
+                font-family: Roboto-Light , sans-serif !important;
+                margin-bottom: 4px;
+                margin-top: 16px;
+            }
+            .price{
+                margin-bottom: 16px;
+                margin-top: 4px;
+                color: $price_color;                
+            }
+        }
+        .c2{
+            margin-left: 4px;
+            margin-right: 16px;
+            .btn{
+                background: $primary_color;
+                border: none;
+                color: white;
+                padding: 8px 8px 8px 8px;
+                border-radius: 4px;
+            }
+        }
+    }
+}
